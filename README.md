@@ -7,8 +7,9 @@ Keep in mind that this does change your current power plan for both AC and batte
 
 ```javascript
 var changeBrightness = require(node-brightness);
-changeBrightness('20');
+changeBrightness(brightness[,callback]);
 ```
+Where brightness is a percentage between 0 and 100
 
 ##Contributing
 

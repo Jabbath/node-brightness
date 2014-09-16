@@ -2,7 +2,7 @@ var os = require('os');
 var sys = require('sys');
 var exec = require('child_process').exec;
 
-function windows(brightness){
+function windows(brightness,callback){
 
 //These are the identifiers for the current power scheme
 
@@ -10,7 +10,7 @@ function windows(brightness){
 	var subgroup;
 	var powerSetting;
 
-	/* powercfg -q gives information about power settings, but can only give accurate brightness info for laptops or other portable windows devices */
+	// powercfg -q gives information about power settings, but can only give accurate brightness info for laptops or other portable windows devices 
 
 	exec('powercfg -q', function(error,stdout,stderr){
 		if(!error){	
@@ -49,6 +49,7 @@ function windows(brightness){
 					
 					exec('powercfg -S' + ' ' + GUID,function(err,out,stderror){
 						if(err) throw err;
+						if(callback) callback();
 						return true;
 					});
 				});
@@ -61,14 +62,14 @@ function windows(brightness){
 	});
 }
 
-function changeBrightness(brightness){
+function changeBrightness(brightness,callback){
 
 //Brightness is in percent
 
 	switch(os.platform()){
 	
 	case 'win32':
-	windows(brightness);
+	windows(brightness,callback);
 	break;
 	
 	case 'linux':
@@ -82,4 +83,4 @@ function changeBrightness(brightness){
 
 }
 
-changeBrightness('100');
+module.exports = changeBrightness;

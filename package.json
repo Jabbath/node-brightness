@@ -1,0 +1,26 @@
+{
+  "name": "node-brightness",
+  "version": "0.1.0",
+  "description": "A node module for changing screen brightness on laptops and other portable devices ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jabbath/node-brightness.git"
+  },
+  "keywords": [
+    "brightness",
+    "change",
+    "screen",
+    "laptop"
+  ],
+  "author": "Anton Afanassiev <AntonAf@outlook.com> (https://github.com/Jabbath)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jabbath/node-brightness/issues"
+  },
+  "homepage": "https://github.com/Jabbath/node-brightness",
+  "os": ["win32"]
+}
