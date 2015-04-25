@@ -21,7 +21,7 @@
   ],
   "author": "Anton Afanassiev <AntonAf@outlook.com> (https://github.com/Jabbath)",
   "contributors": [
-    { name: "Martin Naumann", email: "martin@geekonaut.de", url: "http://www.geekonaut.de" }
+    { "name": "Martin Naumann", "email": "martin@geekonaut.de", "url": "http://www.geekonaut.de" }
   ],
   "license": "MIT",
   "bugs": {
