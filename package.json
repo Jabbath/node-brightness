@@ -1,6 +1,6 @@
 {
   "name": "node-brightness",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A node module for changing screen brightness on laptops and other portable devices ",
   "main": "main.js",
   "bin" : {
