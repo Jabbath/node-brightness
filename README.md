@@ -16,7 +16,7 @@ brightness 50
 ```
 to set the screen brightness to 50%, for instance.
 
-##Usage in javascript code
+## Usage in javascript code
 
 ```javascript
 var changeBrightness = require(node-brightness);
@@ -24,10 +24,10 @@ changeBrightness(brightness[,callback]);
 ```
 Where brightness is a percentage between 0 and 100
 
-##Contributing
+## Contributing
 
 If you have something to add, try and follow the code style as closely as possible.
 
-##License
+## License
 
 Licensed under the MIT license. See license.txt.
